@@ -6,4 +6,4 @@
  (preprocess
   (pps ppx_blob))
  (preprocessor_deps
-  (file text.txt)))
+  (glob_files *.txt)))
