@@ -9,8 +9,9 @@ homepage: "https://github.com/username/reponame"
 doc: "https://url/to/documentation"
 bug-reports: "https://github.com/username/reponame/issues"
 depends: [
-  "dune" {>= "3.17"}
+  "dune" {>= "3.16"}
   "ocaml"
+  "ppx_blob"
   "odoc" {with-doc}
 ]
 build: [

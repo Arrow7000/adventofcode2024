@@ -1,4 +1,8 @@
 (executable
  (public_name adventofcode2024)
  (name main)
+ (preprocess
+  (pps ppx_blob))
+ (preprocessor_deps
+  (file text.txt))
  (libraries adventofcode2024))

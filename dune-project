@@ -1,4 +1,4 @@
-(lang dune 3.17)
+(lang dune 3.16)
 
 (name adventofcode2024)
 
@@ -17,7 +17,7 @@
  (name adventofcode2024)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml)
+ (depends ocaml ppx_blob)
  (tags
   ("add topics" "to describe" your project)))
 
