@@ -1,11 +1,11 @@
 (lang dune 3.16)
 
-(name adventofcode2024)
+(name main)
 
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github Arrow7000/adventofcode2024))
 
 (authors "Aron Adler <aron@adler.dev>")
 
@@ -14,7 +14,7 @@
 (documentation https://url/to/documentation)
 
 (package
- (name adventofcode2024)
+ (name main)
  (synopsis "A short synopsis")
  (description "A longer description")
  (depends ocaml ppx_blob)
