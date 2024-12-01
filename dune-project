@@ -17,7 +17,7 @@
  (name main)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml ppx_blob)
+ (depends ocaml ppx_blob ppxlib)
  (tags
   ("add topics" "to describe" your project)))
 

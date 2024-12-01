@@ -12,6 +12,7 @@ depends: [
   "dune" {>= "3.16"}
   "ocaml"
   "ppx_blob"
+  "ppxlib"
   "odoc" {with-doc}
 ]
 build: [

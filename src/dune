@@ -3,6 +3,7 @@
 (executable
  (public_name main)
  (name main)
+ (libraries ppxlib ppx_aoc_runner angstrom)
  (preprocess
   (pps ppx_blob))
  (preprocessor_deps
