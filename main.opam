@@ -13,6 +13,7 @@ depends: [
   "ocaml"
   "ppx_blob"
   "ppxlib"
+  "angstrom"
   "odoc" {with-doc}
 ]
 build: [
