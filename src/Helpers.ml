@@ -11,3 +11,4 @@ let parseLines parseLine =
 
 let runParser parser input = parse_string ~consume:Consume.All parser input
 let getDiff a b = a - b |> abs
+let id x = x
