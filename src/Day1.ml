@@ -2,7 +2,7 @@ open Angstrom
 open Helpers
 
 let parseGap = Angstrom.string "   "
-let parsePair = lift2 (fun a c -> (a, c)) parseNum (parseGap *> parseNum)
+let parsePair = lift2 (fun a c -> (a, c)) parseInt (parseGap *> parseInt)
 let parseFile = parseLines parsePair
 let textFile = [%blob "Day1.txt"]
 let sort = List.fast_sort compare

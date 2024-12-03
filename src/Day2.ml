@@ -3,7 +3,7 @@ open Helpers
 
 let textFile = [%blob "Day2.txt"]
 let parseSpace = char ' ' >>| fun _ -> ()
-let parseLine = sep_by1 parseSpace parseNum
+let parseLine = sep_by1 parseSpace parseInt
 let parseAll = parseLines parseLine
 let parsed = runParser parseAll textFile |> Result.get_ok
 
