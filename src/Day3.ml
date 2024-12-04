@@ -7,7 +7,6 @@ let parseMulInstr =
   ( and+ ) (string "mul(" *> parseInt) (string "," *> parseInt <* char ')')
   >>| fun pair -> Some pair
 
-let parseAnyChar = any_char >>| fun _ -> None
 let parseInstrOrAnyChar = parseMulInstr <|> parseAnyChar
 let parseMuls = many parseInstrOrAnyChar >>| List.filter_map id
 
@@ -47,3 +46,4 @@ let runInstructions instructions =
        (Enable, 0)
 
 let solve_part2 () = runInstructions parsedPart2 |> snd |> string_of_int
+let () = assert (solve_part2 () = "107069718")
